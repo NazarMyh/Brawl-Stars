@@ -1,3 +1,6 @@
 .Fon {
   background-size: cover;
 }
+html, body {
+  overflow: hidden
+}
