@@ -9,6 +9,14 @@
 <body>
     <iframe width="100%" height="2000" controls="none" src="Zagruzka.mp4" frameborder="0"></iframe>
     <script>
+        var iframe = document.getElementsByTagName('iframe')[0];
+      
+        iframe.onload = function() {
+            media.play();
+        };
+      
+    </script>
+    <script>
         window.onload = function(){
             setTimeout(myURL, 5000);
             var result = document.getElementById("result");
@@ -17,20 +25,6 @@
         function myURL() {
            document.location.href = 'menu.html';
         }
-        const videoPlayer = document.querySelector('.video__poster')
-        const video = videoPlayer.querySelector('.video')
-        const playButton = videoPlayer.querySelector('.video__img')
-
-        playButton.addEventListener('click', (e) => {
-            if(video.paused){
-            video.play()
-            e.target.textContent = ''
-            document.getElementById('play__img').classList.add('play__img-off');
-            } else {
-            video.pause()
-            e.target.textContent = ''
-            }
-        })
      </script>
 </body>
 </html>
