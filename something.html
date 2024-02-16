@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wait a second</title>
+</head>
+<body>
+    <frame width="100%" height="2000" controls="none" src="Zagruzka.mp4" frameborder="0"></frame>
+    <script>
+        window.onload = function(){
+            setTimeout(myURL, 0);
+            var result = document.getElementById("result");
+            result.innerHTML = "<b> The page will redirect after delay of 0 seconds";
+        };
+        function myURL() {
+           document.location.href = 'zagruzka.html';
+        }
+    </script>
+</body>
+</html>
