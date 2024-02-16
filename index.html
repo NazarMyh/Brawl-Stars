@@ -17,6 +17,20 @@
         function myURL() {
            document.location.href = 'menu.html';
         }
+        const videoPlayer = document.querySelector('.video__poster')
+        const video = videoPlayer.querySelector('.video')
+        const playButton = videoPlayer.querySelector('.video__img')
+
+        playButton.addEventListener('click', (e) => {
+            if(video.paused){
+            video.play()
+            e.target.textContent = ''
+            document.getElementById('play__img').classList.add('play__img-off');
+            } else {
+            video.pause()
+            e.target.textContent = ''
+            }
+        })
      </script>
 </body>
 </html>
