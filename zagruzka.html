@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="zagruzka.css">
 </head>
 <body>
-    <iframe width="100%" height="2000" controls="none" src="Zagruzka.mp4" frameborder="0"></iframe>
-    <script>
-        var iframe = document.getElementsByTagName('iframe')[0];
-      
-        iframe.onload = function() {
-            media.play();
-        };
-      
-    </script>
+    <video muted autoplay width="100%" height="2000" controls="none" src="Zagruzka.mp4" frameborder="0"></video>
+    <audio src='Zagruzka.mp3' autoplay='autoplay'></audio>
     <script>
         window.onload = function(){
             setTimeout(myURL, 5000);
