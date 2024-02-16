@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Brawl</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="zagruzka.css">
 </head>
 <body>
-    <img class="Brawl-Pass" src="brawl pass.png" alt="Brawl-Pass">
-    <img class="Solo-Showdown" src="solo showdown.png" alt="Solo-Showdown">
-    <img class="Play-Button" src="play-button.png" alt="Play-Button">
-    <img class="Brawlers-Button" src="Brawlers-Button.png" alt="Brawlers-Button">
-    <img class="Shop-Button" src="shop.png" alt="Shop-Button">
-    <img class="YourNik" src="YourNik.png" alt="YourNik">
-    <img class="Kubky" src="Kubky.png" alt="Kubky">
-    <img class="Money" src="money.png" alt="Money">
-    <img class="Gems" src="Gems.png" alt="Gems">
-    <img class="grivna" src="grivna.png" alt="grivna">
-    <img class="Zaprosy" src="Zaprosy.png" alt="Zaprosy">
-    <img class="burger" src="burger.png" alt="burger">
-    <img class="Friends" src="Friends.png" alt="Friends">
-    <img class="Fon" src="Fon.png" alt="Фон" width=""/>
-    <div class="Black"></div>
-
-    <audio src='menu.mp3' autoplay='autoplay' loop='loop'></audio>
+    <iframe width="100%" height="2000" controls="none" src="Zagruzka.mp4" frameborder="0"></iframe>
+    <script>
+        window.onload = function(){
+            setTimeout(myURL, 5000);
+            var result = document.getElementById("result");
+            result.innerHTML = "<b> The page will redirect after delay of 5 seconds";
+        };
+        function myURL() {
+           document.location.href = 'menu.html';
+        }
+     </script>
 </body>
 </html>
